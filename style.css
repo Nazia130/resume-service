@@ -271,11 +271,97 @@ body {
   .rating-box { width: 120px; bottom: 70px; left: 50%; transform: translateX(-50%); }
 }
 
-/* Mobile phones */
+/* Mobile phones
 @media (max-width: 480px) {
   .hero-text h1 { font-size: 18px; }
   .hero-text p { font-size: 11px; }
   .hero-img img { width: 150px; }
   .resume-box { width: 100px; bottom: 10px; right: 50%; transform: translateX(50%); }
   .rating-box { width: 100px; bottom: 60px; left: 50%; transform: translateX(-50%); }
+} */
+
+/* Existing styles above remain the same */
+
+/* MEDIA QUERIES FOR MOBILE */
+@media (max-width: 991px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    flex: unset;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+  }
+
+  .hero-img {
+    flex: unset;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-img img {
+    width: 80%;
+    max-width: 300px;
+    bottom: 0;
+  }
+
+  .resume-box {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 10px auto 0;
+  }
+
+  .rating-box {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 10px auto 0;
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 12px;
+  }
+
+  .resume-box, .rating-box {
+    width: 110px;
+    padding: 8px 10px;
+  }
+
+  .rating-number {
+    font-size: 18px;
+  }
+
+  .rating-stars {
+    font-size: 14px;
+  }
+
+  .resume-number {
+    font-size: 16px;
+  }
+
+  .resume-text {
+    font-size: 11px;
+  }
+
+  .hero-img img {
+    width: 90%;
+    max-width: 250px;
+  }
 }
